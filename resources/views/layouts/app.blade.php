@@ -25,6 +25,8 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
+                   
+                    <img src="https://cdn.pixabay.com/photo/2019/06/23/05/32/deer-head-4292868_960_720.png" width="40px" height="40px" >
                     Aston Animal Sanctuary
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -61,10 +63,6 @@
                         </li>
                         
                         
-                        @endif
-                        <li class="nav-item">
-                            <a class="nav-link"href="{{ route('displayAnimal') }}" >Display Animal </a>
-                        </li>
 
                         <li class="nav-item">
                             <a class="nav-link"href="{{ route('managerequests') }}" >Manage Requests </a>
@@ -77,7 +75,10 @@
                         <li class="nav-item">
                             <a class="nav-link"href="{{ route('denyView') }}" >Deny Requests </a>
                         </li>
-
+                        @endif
+                        <li class="nav-item">
+                            <a class="nav-link"href="{{ route('displayAnimal') }}" >Display Animal </a>
+                        </li>
                         <li class="nav-item ">
                             
                             <a class="nav-link" href="{{ route('logout') }}"

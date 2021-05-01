@@ -199,7 +199,7 @@ class AccountController extends Controller
                     'pendingUsers'=> 0,
                 ));
 
-                Animals::where("id",$userid)->update(array(
+                Animals::where("id",$animalid)->update(array(
                     'userid'=>$userid,
                 ));
 

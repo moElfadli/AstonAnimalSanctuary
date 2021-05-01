@@ -24,16 +24,12 @@
                             <th> user emial</th>
                             <th> Animal name</th>
                             <th> Status </th>
-                            
-                           
-                       
+        
                             </tr>
                             </thead>
                             <tbody>
                                 @foreach($pendingRequests as $request)
 
-                             
-                                
                                 <?php
                                 
                                 $animalid = 1;
